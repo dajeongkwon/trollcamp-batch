@@ -62,6 +62,12 @@ timeline : 매치(게임) 시간별 발생 이벤트 <br>
 플레이어별로 중복되는 매치와 타임라인이 있을수 있으므로 데이터 존재 여부를 미리 검사하여 중복으로 호출하지 않도록 한다. <br>
 LOL Api : /lol/match/v3/matches/{matchId}, /lol/match/v3/timelines/by-match/{matchId} <br>
 
+### (참고) 데이터 샘플
+```
+batch_sample_data
+```
+3명의 플레이어, 각 플레이어별 3개의 매치(게임)으로 제한하여 실행한 데이터 샘플입니다. <br>
+
 <br>
 <hr/>
 <br>
