@@ -45,19 +45,21 @@ DB에 있는 플레이어라면, DB에서 accountId를 가져오고, 없는 플�
 LOL Api : /lol/summoner/v3/summoners/{summonerId} <br>
 그렇게 얻어진 플레이어들을 5개의 청크로 나누어 csv 파일로 저장한다. (나눠서 matches, timeline 배치를 돌리기 위함) <br>
 
-### (4) matchlist API를 호출하여 플레이어의 게임 목록을 받는다.
+### (4) matchlist API를 호출하여 플레이어의 매치(게임) 목록을 받는다.
 ```
 04_call_matchlist_api.ipynb
 ```
 이 작업 부터는 5개의 머신에서 각각 돌린다. <br>
+이전 배치에서 DB에 넣어두었던 플레이어라면, 마지막 매치(게임)의 timestamp와 비교하여 그 이후의 매치(게임)들만 가져오고 저장한다.<br>
 LOL Api : /lol/match/v3/matchlists/by-account/{accountId} <br>
 
-### (5) 플레이어의 게임 목록을 돌면서 matches, timeline API를 호출한다.
+### (5) 플레이어의 매치(게임) 목록을 돌면서 matches, timeline API를 호출한다.
 ```
 05_call_matches_timelines_api.ipynb
 ```
-matches : 게임 상세 정보 <br>
-timeline : 게임 시간별 발생 이벤트 <br>
+matches : 매치(게임) 상세 정보 <br>
+timeline : 매치(게임) 시간별 발생 이벤트 <br>
+플레이어별로 중복되는 매치와 타임라인이 있을수 있으므로 데이터 존재 여부를 미리 검사하여 중복으로 호출하지 않도록 한다. <br>
 LOL Api : /lol/match/v3/matches/{matchId}, /lol/match/v3/timelines/by-match/{matchId} <br>
 
 <br>
@@ -65,4 +67,5 @@ LOL Api : /lol/match/v3/matches/{matchId}, /lol/match/v3/timelines/by-match/{mat
 <br>
 
 # 데이터 분석
-기획 확정 후 진행 예정 <br>
+2018.11.10 기획 확정 <br>
+조만간 업데이트 예정 <br>
