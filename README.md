@@ -1,8 +1,3 @@
-
-<br>
-<hr/>
-<br>
-
 # Trollcamp 프로젝트 개요
 League of legend(이하 LOL) 게임 API 를 이용하여 게임 유저의 데이터를 쌓은 후 분석하여 서비스한다.<br>
 OP.GG 와 비슷한 사이트를 만들되, 차별성은 반드시 둔다.<br>
