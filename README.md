@@ -3,6 +3,9 @@ League of legend(이하 LOL) 게임 API 를 이용하여 게임 유저의 데이
 OP.GG 와 비슷한 사이트를 만들되, 차별성은 반드시 둔다.<br>
 (참고) http://www.op.gg/summoner/userName=lehends<br>
 
+Fast campus Data Engineering Extension School 1기 Trollcamp팀 <br>
+권다정, 신동렬, 이승하, 임종운, 정현주, 한은구 (가나다순, 총 6명) <br>
+
 <br>
 <hr/>
 <br>
